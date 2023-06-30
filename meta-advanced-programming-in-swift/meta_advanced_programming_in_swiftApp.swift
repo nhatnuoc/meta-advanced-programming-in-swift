@@ -11,7 +11,7 @@ import SwiftUI
 struct meta_advanced_programming_in_swiftApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuItemsView()
         }
     }
 }

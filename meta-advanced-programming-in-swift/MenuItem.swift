@@ -7,9 +7,38 @@
 
 import Foundation
 
+protocol MenuItemDetail {
+    var id: UUID { get }
+    var price: Double { get }
+    var title: String { get }
+    var category: MenuCategory { get }
+    var ordersCount: Int { get set }
+    var priceInt: Int { get set }
+    var ingredients: [Ingredient] { get set }
+}
+
+//class MenuItemDetailImpl: MenuItemDetail {
+//    var id: UUID
+//    
+//    var price: Double
+//    
+//    var title: String
+//    
+//    var category: MenuCategory
+//    
+//    var ordersCount: Int
+//    
+//    var priceInt: Int
+//    
+//    var ingredients: [Ingredient]
+//    
+//    
+//}
+
 struct MenuItem: Identifiable {
-    var id: ObjectIdentifier
+    var id = UUID()
     
     let title: String
     let ingredients: [Ingredient]
+    
 }

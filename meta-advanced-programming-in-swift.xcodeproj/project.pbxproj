@@ -20,7 +20,7 @@
 		0B8C34462A2358CF00E94B2E /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C34452A2358CF00E94B2E /* MenuCategory.swift */; };
 		0B8C34482A2358FB00E94B2E /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C34472A2358FB00E94B2E /* Ingredient.swift */; };
 		0B8C344A2A235B1100E94B2E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C34492A235B1100E94B2E /* MenuItem.swift */; };
-		0B8C344C2A235C6D00E94B2E /* MenuViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C344B2A235C6D00E94B2E /* MenuViewViewModel.swift */; };
+		0B8C344C2A235C6D00E94B2E /* MenuItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C344B2A235C6D00E94B2E /* MenuItemsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		0B8C34452A2358CF00E94B2E /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		0B8C34472A2358FB00E94B2E /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		0B8C34492A235B1100E94B2E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
-		0B8C344B2A235C6D00E94B2E /* MenuViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewViewModel.swift; sourceTree = "<group>"; };
+		0B8C344B2A235C6D00E94B2E /* MenuItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 				0B8C34452A2358CF00E94B2E /* MenuCategory.swift */,
 				0B8C34472A2358FB00E94B2E /* Ingredient.swift */,
 				0B8C34492A235B1100E94B2E /* MenuItem.swift */,
-				0B8C344B2A235C6D00E94B2E /* MenuViewViewModel.swift */,
+				0B8C344B2A235C6D00E94B2E /* MenuItemsViewModel.swift */,
 			);
 			path = "meta-advanced-programming-in-swift";
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				0B8C34402A23449500E94B2E /* MenuItemsView.swift in Sources */,
 				0B8C34482A2358FB00E94B2E /* Ingredient.swift in Sources */,
 				0B8C34162A23433E00E94B2E /* meta_advanced_programming_in_swiftApp.swift in Sources */,
-				0B8C344C2A235C6D00E94B2E /* MenuViewViewModel.swift in Sources */,
+				0B8C344C2A235C6D00E94B2E /* MenuItemsViewModel.swift in Sources */,
 				0B8C34422A2344B800E94B2E /* MenuItemsOptionView.swift in Sources */,
 				0B8C344A2A235B1100E94B2E /* MenuItem.swift in Sources */,
 				0B8C34462A2358CF00E94B2E /* MenuCategory.swift in Sources */,

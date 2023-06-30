@@ -9,14 +9,55 @@ import SwiftUI
 
 struct MenuItemsView: View {
     @State private var isShowOptions = false
+    var viewModel: MenuItemsViewModel = MenuItemsViewModel()
     
     var body: some View {
         NavigationView {
-            Form {
-                Section {
-                    Text("Menu")
+            ScrollView(content: {
+                HStack {
+                    Text("Food").frame(alignment: .leading)
                 }
-            }.navigationTitle(Text("Menu"))
+                LazyVGrid(columns: [
+                    GridItem(.adaptive(minimum: 100)),
+                    GridItem(.adaptive(minimum: 150)),
+                    GridItem(.adaptive(minimum: 150))
+                ]) {
+                    ForEach(self.viewModel.foodMenuItems, id: \.id) { item in
+                        VStack(spacing: 12, content: {
+                            Color.black.overlay {
+                                EmptyView()
+                                    .frame(height: 100)
+                            }
+                            Text(item.title)
+                        }).frame(maxWidth: .infinity)
+                            .onTapGesture {
+                                
+                            }
+                    }
+                }
+                LazyVGrid(columns: [
+                    GridItem(.flexible()),
+                    GridItem(.flexible()),
+                    GridItem(.flexible())
+                ]) {
+                    ForEach(self.viewModel.drinkMenuItems, id: \.id) { item in
+                        VStack {
+                            Text(item.title)
+                        }
+                    }
+                }
+                LazyVGrid(columns: [
+                    GridItem(.flexible()),
+                    GridItem(.flexible()),
+                    GridItem(.flexible())
+                ]) {
+                    ForEach(self.viewModel.dessertMenuItems, id: \.id) { item in
+                        VStack {
+                            Text(item.title)
+                        }
+                    }
+                }
+            }).navigationTitle(Text("Menu"))
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
