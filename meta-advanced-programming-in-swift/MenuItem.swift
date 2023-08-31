@@ -35,10 +35,19 @@ protocol MenuItemDetail {
 //    
 //}
 
-struct MenuItem: Identifiable {
+struct MenuItem: Identifiable, MenuItemDetail {
+    var price: Double
+    
+    var category: MenuCategory
+    
+    var ordersCount: Int
+    
+    var priceInt: Int
+    
+    var ingredients: [Ingredient]
+    
     var id = UUID()
     
     let title: String
-    let ingredients: [Ingredient]
     
 }

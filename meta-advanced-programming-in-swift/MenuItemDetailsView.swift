@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct MenuItemDetailsView: View {
+    var menuItem: MenuItem?
+    
     var body: some View {
         VStack {
             Image("logo")
+                .resizable()
+                .frame(width: 200)
+            Text("\(self.menuItem?.price ?? 0)")
         }
+        .navigationTitle(self.menuItem?.title ?? "")
     }
 }
 
